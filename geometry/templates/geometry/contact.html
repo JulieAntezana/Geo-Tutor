@@ -1,0 +1,24 @@
+{% extends "geometry/layout.html" %}
+{% block title %}
+Contact us
+{% endblock %}
+{% block content %}
+<p>Questions or Comments? Send us a message and we will get back with you within 24 hours.</p>
+<h1>Contact Us</h1>
+<form action="logmessage/" method="post">
+{% csrf_token %}
+First Name:<br>
+<input name="firstname">
+<br><br>
+Last Name:<br>
+<input name="lastname">
+<br><br>
+Email:<br>
+<input name="email">
+<br><br>
+Message:<br>
+<input name="textarea">
+<br><br>
+<input class="btn" type="submit" value="Send my Message">
+</form>
+{% endblock %}

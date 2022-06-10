@@ -1,0 +1,21 @@
+{% extends "geometry/layout.html" %}
+{% block title %}
+Register
+{% endblock %}
+{% block content %}
+<p>It's fast. It's Free. Sign up now to begin your tutorials.</p>
+<h1>Register</h1>
+<form action="addrecord/" method="post">
+{% csrf_token %}
+First Name:<br>
+<input name="firstname">
+<br><br>
+Last Name:<br>
+<input name="lastname">
+<br><br>
+Email:<br>
+<input name="email">
+<br><br>
+<input class="btn" type="submit" value="Sign me up">
+</form>
+{% endblock %}

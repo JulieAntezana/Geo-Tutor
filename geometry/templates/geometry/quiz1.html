@@ -1,0 +1,79 @@
+{% extends "geometry/layout.html" %}
+{% block title %}
+Types of Angles Quiz
+{% endblock %}
+{% block content %}
+<h2>Types of Angles Practice</h2>
+{% load static %}
+<img class="quizz" src="{% static 'geometry/media/obtuse-house.jpg' %}" alt="House on a hill with unusual geometric features.">
+<p>1. What type of angle is this?</p>
+<form>
+<label class="quiz"><input type="radio" name="q1a" value="level-1">Acute angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1a" value="level-2">Full angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1a" value="level-3">Obtuse angle</label>
+<br>
+</form>
+{% load static %}
+<img class="quizz" src="{% static 'geometry/media/full-fan.jpg' %}" alt="Folding hand fan opened to 360 degrees.">
+<p>2. What type of angle is this?</p>
+<form>
+<label class="quiz"><input type="radio" name="q1b" value="level-1">Reflex angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1b" value="level-2">Full angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1b" value="level-3">Acute angle</label>
+<br>
+</form>
+{% load static %}
+<img class="quizz" src="{% static 'geometry/media/right-boat.jpg' %}" alt="Sailboat with two sails.">
+<p>3. What type of angle is this?</p>
+<form>
+<label class="quiz"><input type="radio" name="q1c" value="level-1">Right angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1c" value="level-2">Acute angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1c" value="level-3">Straight angle</label>
+<br>
+</form>
+{% load static %}
+<img class="quizz" src="{% static 'geometry/media/reflex-man.jpg' %}" alt="Man leaping with legs spread beyond 180 degrees.">
+<p>4. What type of angle is this?</p>
+<form>
+<label class="quiz"><input type="radio" name="q1d" value="level-1">Full angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1d" value="level-2">Right angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1d" value="level-3">Reflex angle</label>
+<br>
+</form>
+{% load static %}
+<img class="quizz" src="{% static 'geometry/media/acute-stairs.jpg' %}" alt="Stairs the spiral downward with sharp corners.">
+<p>5. What type of angle is this?</p>
+<form>
+<label class="quiz"><input type="radio" name="q1e" value="level-1">Straight angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1e" value="level-2">Acute angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1e" value="level-3">Obtuse angle</label>
+<br>
+</form>
+{% load static %}
+<img class="quizz" src="{% static 'geometry/media/straight-clock.jpg' %}" alt="Stairs the spiral downward with sharp corners.">
+<p>6. What type of angle is this?</p>
+<form>
+<label class="quiz"><input type="radio" name="q1f" value="level-1">Reflex angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1f" value="level-2">Full angle</label>
+<br>
+<label class="quiz"><input type="radio" name="q1f" value="level-3">Straight angle</label>
+<br>
+</form>
+
+
+<div class="container">
+  <a href="{% url 'results' %}" class="btn">Done</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "geometry/layout.html" %}
+{% block title %}
+Message Log
+{% endblock %}
+{% block content %}
+
+<h1>Message Log</h1>
+
+<table border="1">
+{% for x in mycontacts %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.firstname }}</td>
+<td>{{ x.lastname }}</td>
+<td>{{ x.email }}</td>
+<td>{{ x.textarea }}</td>
+<td><a href="delete/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+  <a href="{% url 'contact' %}">Contact us</a>
+</p>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "geometry/layout.html" %}
+{% block title %}
+Types of Angles
+{% endblock %}
+{% block content %}
+<h1>Types of Angles Tutorial</h1>
+<h2>What is a point?</h2>
+<p>A <b>point</b> is an exact location or position.
+  You can name a point using a letter. This point is named point A.</p>
+  {% load static %}
+  <img class="point" src="{% static 'geometry/media/point.webp' %}" alt="A small dot labeled with the letter A.">
+  <h2>What is a ray?</h2>
+  <p>A <b>ray</b> is part of a line. It has one endpoint and continues forever in the other direction. You can name a ray using its endpoint, one other point on the ray, and a symbol with an arrow pointing in one direction, like this:</p>
+  {% load static %}
+  <img class="abray" src="{% static 'geometry/media/abray.jpg' %}" alt="The letters A and B with an arrow above it.">
+  <p>This is an example of a ray.</p>
+  {% load static %}
+  <img class="illustration" src="{% static 'geometry/media/ray.jpg' %}" alt="An arrow with the letter A on one end and the letter B on the other end.">
+  <h2>What is an angle?</h2>
+  <p>An <b>angle</b> is formed by two <strong>rays</strong> that share a common endpoint, or <b>vertex</b>.</p>
+  {% load static %}
+  <img class="illustration" src="{% static 'geometry/media/angle.jpg' %}" alt="Two arrows radiating from a single point.">
+  <p>The size of the angle depends on how widely or narrowly the two rays are spread apart. The wider open an angle is, the greater its measure. Angles are measured in degrees.</p>
+  <p>Angles have special names based on their degree measures.</p>
+  <h2>Right angles</h2>
+  <p>A <b>right angle</b> measures exactly 90°.</p>
+  {% load static %}
+  <img class="illustration" src="{% static 'geometry/media/right-angle.jpg' %}" alt="Two arrows radiating from a single point with a 90 degree angle.">
+  <p>It is the same shape as the corner of a square.</p>
+  <h2>Acute angle</h2>
+  <p>An <b>acute angle</b> measures between 0° and 90°. It is narrower than a right angle.</p>
+  <img class="illustration" src="{% static 'geometry/media/acute-angle.jpg' %}" alt="Two arrows radiating from a single point with a less than 90 degree angle.">
+  <h2>Obtuse angles</h2>
+  <p>An <b>obtuse angle</b> measures between 90° and 180°.</p>
+  {% load static %}
+  <img class="illustration" src="{% static 'geometry/media/obtuse-angle.jpg' %}" alt="Two arrows radiating from a single point with an angle between 90 degrees and 180 degrees.">
+  <h2>Straight angles</h2>
+  <p>A <b>straight angle</b> measures exactly 180°.</p>
+  {% load static %}
+  <img class="illustration" src="{% static 'geometry/media/straight-angle.jpg' %}" alt="Two arrows radiating from a single point with an angle of 180 degrees, which is a straight line.">
+  <p>The rays form a line.</p>
+  <h2>Reflex angles</h2>
+  <p>A <b>reflex angle</b> measures between 180° and 360°.</p>
+  {% load static %}
+  <img class="illustration" src="{% static 'geometry/media/reflex-angle.jpg' %}" alt="Two arrows radiating from a single point with an angle between 180 degrees and 360 degrees.">
+  <p>It is wider than a straight angle.</p>
+  <h2>Full angles</h2>
+  <p>A full angle measures exactly 360°.</p>
+  {% load static %}
+  <img class="illustration" src="{% static 'geometry/media/full-angle.jpg' %}" alt="Two arrows radiating from a single point with an angle of 360 degrees. They lie on top of each other and appear to be just one arrow.">
+  <p>It is one complete rotation.</p>
+<div class="container">
+  <a href="{% url 'quiz1' %}" class="btn">Practice</a>
+  <!-- <button class="btn" type="button"><a href="{% url 'quiz1' %}" class="btn"></a></button> -->
+</div>
+{% endblock %}

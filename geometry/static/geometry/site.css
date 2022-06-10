@@ -1,0 +1,94 @@
+.message {
+  font-weight: 600;
+  color: blue;
+}
+
+h2 {
+  color:#3471ee;
+}
+
+p b {
+  color:#920fa7;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row;
+  background-color: #0d244d;
+  color: white;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+}
+
+.navbar {
+  background-color: #920fa7;
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-brand {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.navbar-item {
+  font-variant: small-caps;
+  margin-left: 30px;
+}
+
+.body-content {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-content a {
+  color: #3471ee;
+}
+
+.team {
+  width: 100%;
+}
+
+.btn {
+  background-color:#920fa7;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 140px;
+  margin: 20px;
+  background-color:#920fa7;
+  color: white;
+  font-size: larger;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.point {
+  width: 100px;
+}
+
+.illustration {
+  width: 320px;
+}
+
+.quizz {
+  width: 350px;
+  margin: 20px;
+}
