@@ -4,7 +4,7 @@ Repository for a Geometry Tutor Web App using Python and the Django framework.
 
 # Overview
 
-I am a software engineer who wants to create a geometry tutorial website for middle school students.
+We are a team of software engineers who want to create a geometry tutorial website for middle school and high school students.
 
 How to start a test server on your computer: Click on the link for more information:
 
@@ -25,7 +25,7 @@ https://youtu.be/eEPV2l_zm5A
 
 # Web Pages
 
-The web app has tutorial lessons about geometry topics. Each lesson has a quiz to help the student practice what they have learned and measure their success. Students can earn points and rewards as they progress through the lessons. There is a student registration form which is connected to a database and displays the data on the "Student Directory" page. I have included a "Contact Us" form that connects with the database that displays the data on a "Message Log" page. Most pages can be accessed by clicking on the navigation bar at the top of the page.
+The web app has tutorial lessons about geometry topics. Each lesson has a quiz to help the student practice what they have learned and measure their success. Students can earn points and rewards as they progress through the lessons. There is a student registration form which is connected to a database and displays the data on the "Student Directory" page. We have included a "Contact Us" form that connects with the database that displays the data on a "Message Log" page. Most pages can be accessed by clicking on the navigation bar at the top of the page.
 
 Description of what is dynamically created on each page: Each page has a header, navigation bar and footer which is dynamically created from a template. The quizzes will be dynamically created in the future. The student directory and the message log are dynamically created from the "students" database and the "contacts" database. The data is collected via a "Registration" form and a "Contact Us" form. In the future, I plan to create a scoring system that will award points at the end of each lesson.
 
